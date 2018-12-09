@@ -1,0 +1,25 @@
+{
+  "name": "cautious-succotash",
+  "version": "1.0.0",
+  "description": "A Bot Demonstrating The Capabilities Of Twitter API via Python.",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "yes"
+  },
+  "keywords": [
+    "Twitter",
+    "BOT",
+    "API",
+    "succotash",
+    "cautious"
+  ],
+  "author": "Savio Kay < saviokay.com >",
+  "license": "ISC",
+  "dependencies": {
+    "twit": "^2.2.11"
+  }
+}
