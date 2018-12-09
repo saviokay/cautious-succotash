@@ -4,6 +4,7 @@
   "description": "A Bot Demonstrating The Capabilities Of Twitter API via Python.",
   "main": "bot.js",
   "scripts": {
+    "start": "node bot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
