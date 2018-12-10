@@ -24,12 +24,19 @@ function gotData(err, data, response){
 //
 //  tweet 'hello world!'
 //
-var tweet = {
-    status: 'Suffering Succotash'
-            }
 
-T.post('statuses/update', tweet, tweeted);
+function TweetIt(){
+        var tweet = {
+            status: 'Suffering Succotash #CautiousSuccotash'
+                    }
 
-function tweeted(err, data, response) {
-  console.log(data)
+        T.post('statuses/update', tweet, tweeted);
+
+        function tweeted(err, data, response) {
+            if(err){
+            console.log('It Didnt Work!')
+            } else{
+          console.log('It Did Work!')
+                }
+        }
 }
