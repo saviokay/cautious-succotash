@@ -34,9 +34,9 @@ function TweetIt(){
 
         function tweeted(err, data, response) {
             if(err){
-            console.log('It Didnt Work!')
+            console.log('The Tweet Wasnt Sent!')
             } else{
-          console.log('It Did Work!')
+          console.log('The Tweet Was Successfully Sent!')
                 }
         }
 }
