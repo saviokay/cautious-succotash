@@ -25,18 +25,23 @@ function gotData(err, data, response){
 //  tweet 'hello world!'
 //
 
-function TweetIt(){
-        var tweet = {
-            status: 'Suffering Succotash #CautiousSuccotash'
-                    }
+tweetIt();
+setInterval(tweetIt, 1000*20);
 
-        T.post('statuses/update', tweet, tweeted);
+function tweetIt() {
 
-        function tweeted(err, data, response) {
-            if(err){
-            console.log('The Tweet Wasnt Sent!')
-            } else{
-          console.log('The Tweet Was Successfully Sent!')
-                }
-        }
-}
+	var r = Math.floor(Math.random()*100);
+
+	var tweet = {
+	  status: 'random number ' + r + ' #codingrainbow'
+	}
+
+	T.post('statuses/update', tweet, tweeted);
+
+	function tweeted(err, data, response) {
+	  if (err) {
+	  	console.log("Something went wwrong!");
+	  } else {
+	    console.log("It worked!");
+	  }
+	}
