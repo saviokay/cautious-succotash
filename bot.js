@@ -56,3 +56,6 @@ function tweetIt() {
       my_screen_name = data.screen_name;
       console.log('Using account ' + my_screen_name);
     });
+
+    // Anytime someone follows me
+    stream.on('follow', followed);
