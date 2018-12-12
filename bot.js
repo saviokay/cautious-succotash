@@ -56,7 +56,14 @@ function tweetIt() {
         skip_status: true
     }
 
-    T.get('account/verify_credentials', get_skip, function(err, data, response) {
+    function getdone(err, data, response)if (err) {
+      console.log("Something went wwrong!");
+    } else {
+      console.log("It worked!");
+    }
+  }
+
+    T.get('account/verify_credentials', get_skip, getdone {
       my_screen_name = data.screen_name;
       console.log('Using account ' + my_screen_name);
     });
