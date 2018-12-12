@@ -56,8 +56,9 @@ function tweetIt() {
         skip_status: true
     }
 
-    function getdone(err, data, response)if (err) {
-      console.log("Something went wwrong!");
+    function getdone(err, data, response)
+    if (err) {
+      console.log("Something went wrong!");
     } else {
       console.log("It worked!");
     }
