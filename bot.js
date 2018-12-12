@@ -1,4 +1,4 @@
-//console.log("The Succotash Is Curious.")
+console.log("The Succotash Is Curious.")
 
 var Twit = require('twit');
 
