@@ -21,16 +21,8 @@ function gotData(err, data, response){
     console.log("----------------------");
     }
 };
-//
-//  tweet 'hello world!'
-//
-
-tweetIt();
-setInterval(tweetIt, 1000*20);
 
 function tweetIt() {
-
-	var r = Math.floor(Math.random()*100);
 
 	var tweet = {
 	  status: 'random number ' + r + ' #codingrainbow'
