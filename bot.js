@@ -52,7 +52,11 @@ function tweetIt() {
     // To ensure we don't tweet ourselves, we must get our user data.
     var my_screen_name = null;
 
-    T.get('account/verify_credentials', { skip_status: true }, function(err, data, response) {
+    var get_skip = {
+        skip_status: true
+    }
+
+    T.get('account/verify_credentials', get_skip, function(err, data, response) {
       my_screen_name = data.screen_name;
       console.log('Using account ' + my_screen_name);
     });
