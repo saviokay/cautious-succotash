@@ -1,7 +1,7 @@
 {
   "name": "cautious-succotash",
   "version": "1.0.0",
-  "description": "A Bot Demonstrating The Capabilities Of Twitter API via Python.",
+  "description": "A Bot Demonstrating The Capabilities Of Twitter API via NodeJS.",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js",
