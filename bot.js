@@ -19,13 +19,14 @@ function gotData(err, data, response){
     for (var i = 0;i < tweets.length; i++){
     console.log('"'+tweets[i].text+'"' );
     console.log("----------------------");
+    console.log('"'+tweets[i].text+'"' );
     }
 };
 
 function tweetIt() {
 
 	var tweet = {
-	  status: 'random number ' + r + ' #codingrainbow'
+	  status: 'random number ' + r + ' #sufferingsuccostash'
 	}
 
 	T.post('statuses/update', tweet, tweeted);
