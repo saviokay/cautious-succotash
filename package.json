@@ -10,8 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "yes",
-    "git": "yes"
+    "url": "yes"
   },
   "keywords": [
     "Twitter",
