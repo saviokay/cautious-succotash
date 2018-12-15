@@ -59,7 +59,7 @@ function tweetIt() {
 
     T.get('account/verify_credentials', get_skip, getdone {
       my_screen_name = data.screen_name;
-      console.log('Using account of ' + my_screen_name);
+      console.log('Using account of ' + my_screen_name+ ' Thank you.');
     });
 
     // Anytime someone follows me
@@ -75,6 +75,6 @@ function tweetIt() {
          using your twitter screenName
          */
       if (screenName !== my_screen_name) {
-        tweetIt('.@' + screenName + ' do you like rainbows?');
+        tweetIt('.@' + screenName + ' Thanks, Do you think this is my efforst are worth it.');
   }
 }
