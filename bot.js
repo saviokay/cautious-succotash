@@ -24,18 +24,13 @@ function gotData(err, data, response){
 };
 
 function tweetIt() {
-
-	var tweet = {
-	  status: 'random number ' + r + ' #sufferingsuccostash'
-	}
-
 	T.post('statuses/update', tweet, tweeted);
 
 	function tweeted(err, data, response) {
 	  if (err) {
 	  	console.log("Something went wrong!");
 	  } else {
-	    console.log("It worked!");
+	    console.log("It worked!, Move on.");
 	  }
 	}
 
@@ -53,7 +48,7 @@ function tweetIt() {
     if (err) {
       console.log("Something went wrong!");
     } else {
-      console.log("It worked!");
+      console.log("It worked!, Move on.");
     }
   }
 
