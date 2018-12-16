@@ -29,6 +29,7 @@ function tweetIt() {
 	function tweeted(err, data, response) {
 	  if (err) {
 	  	console.log("Something went wrong!");
+        console.log(err);
 	  } else {
 	    console.log("It worked!, Move on.");
 	  }
@@ -47,6 +48,7 @@ function tweetIt() {
     function getdone(err, data, response)
     if (err) {
       console.log("Something went wrong!");
+      console.log(err);
     } else {
       console.log("It worked!, Move on.");
     }
