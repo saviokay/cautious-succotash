@@ -24,7 +24,7 @@ function gotData(err, data, response){
 };
 
 function tweetIt() {
-	T.post('statuses', tweet, tweeted);
+	T.post('statuses/update', tweet, tweeted);
 
 	function tweeted(err, data, response) {
 	  if (err) {
