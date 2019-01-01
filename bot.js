@@ -29,6 +29,7 @@ function tweetIt() {
 	function tweeted(err, data, response) {
 	  if (err) {
 	  	console.log("Something went wrong!");
+		console.log(err);
         console.log(err);
 	  } else {
 	    console.log("It worked!, Move on.");
@@ -56,6 +57,7 @@ function tweetIt() {
 
     T.get('account/verify_credentials', get_skip, getdone {
       my_screen_name = data.screen_name;
+      console.log('Using account of ' + my_screen_name+ ' Thank you.');
       console.log('Using account of ' + my_screen_name+ ' Thank you.');
     });
 
