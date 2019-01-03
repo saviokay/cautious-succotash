@@ -3,11 +3,11 @@
 var Twit = require('twit');
 
 var config = require('./config');
-console.log(config);
+//console.log(config);
 var T = new Twit(config);
 var params = {
     q: 'succotash',
-    count: 2};
+    count: 10};
 
 //
 //  search twitter for all tweets containing the word 'banana' since July 11, 2011
@@ -29,7 +29,7 @@ function tweetIt() {
 	function tweeted(err, data, response) {
 	  if (err) {
 	  	console.log("Something went wrong!");
-		console.log(err);
+		//console.log(err);
         console.log(err);
 	  } else {
 	    console.log("It worked!, Move on.");
